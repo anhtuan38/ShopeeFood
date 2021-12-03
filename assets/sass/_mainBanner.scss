@@ -1,0 +1,16 @@
+.main-banner {
+  margin-top: 63px;
+  height: 92vh;
+  padding: 40px 80px;
+  background-image: url(../images/main-banner.jpg);
+  background-repeat: no-repeat;
+
+  .now-search {
+    display: inline-block;
+    width: 470px;
+
+    .searchtext {
+      height: 45px;
+    }
+  }
+}
