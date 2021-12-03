@@ -1,0 +1,23 @@
+.now-coporation {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+  background-color: #fff;
+
+  .preservation {
+    padding: 50px 150px;
+
+    li:before {
+      content: "-";
+      margin-right: 0.5em;
+    }
+  }
+
+  .merchant-app {
+    padding: 50px 0px 50px 150px;
+  }
+  .img-reg-merchant {
+    height: 300px;
+  }
+}
