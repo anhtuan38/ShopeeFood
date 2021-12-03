@@ -1,0 +1,43 @@
+footer {
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 372px;
+}
+
+.logo-shoppe {
+  cursor: pointer;
+}
+
+.facebook,
+.instagram {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #959595;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.facebook:hover {
+  background-color: #0288d1;
+}
+.instagram:hover {
+  background-color: #ba30a7;
+}
+.link-icon {
+  display: flex;
+  justify-content: space-around;
+}
+.link-icon .icon {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.img-bocongthuong {
+  width: 170px;
+  cursor: pointer;
+}
+.img-bocongthuong img {
+  width: 100%;
+}
