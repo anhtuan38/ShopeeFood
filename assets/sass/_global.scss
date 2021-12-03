@@ -1,0 +1,29 @@
+html {
+  font-family: Arial, sans-serif;
+}
+.container-fluid {
+  position: absolute;
+  padding: 0px;
+  background-color: $background;
+}
+ul {
+  padding-left: 0px;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+p {
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+h1 {
+  color: #fff;
+  font-size: 24px;
+}
+h2 {
+  font-size: 15px;
+  color: #fff;
+}
