@@ -20,3 +20,14 @@
 .navbar-logo img {
   height: 100%;
 }
+.login {
+  height: 100%;
+  padding: 8px;
+  border-radius: 3px;
+  margin: 0px 15px;
+  border: 1px solid #f17c65;
+
+  .login-btn {
+    color: #f17c65;
+  }
+}
