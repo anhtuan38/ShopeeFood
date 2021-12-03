@@ -103,9 +103,21 @@ h2 {
   height: 100%;
 }
 
+.login {
+  height: 100%;
+  padding: 8px;
+  border-radius: 3px;
+  margin: 0px 15px;
+  border: 1px solid #f17c65;
+}
+.login .login-btn {
+  color: #f17c65;
+}
+
 .main-banner {
   margin-top: 63px;
   height: 92vh;
+  min-width: 100%;
   padding: 40px 80px;
   background-image: url(../images/main-banner.jpg);
   background-repeat: no-repeat;

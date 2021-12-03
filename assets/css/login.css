@@ -103,6 +103,17 @@ h2 {
   height: 100%;
 }
 
+.login {
+  height: 100%;
+  padding: 8px;
+  border-radius: 3px;
+  margin: 0px 15px;
+  border: 1px solid #f17c65;
+}
+.login .login-btn {
+  color: #f17c65;
+}
+
 .loginShoppe {
   margin: 94px auto 40px;
   width: 600px;
