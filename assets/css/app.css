@@ -1,0 +1,190 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+
+input {
+  line-height: normal;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+html {
+  font-family: Arial, sans-serif;
+}
+
+.container-fluid {
+  position: absolute;
+  padding: 0px;
+  background-color: #f2f2f2;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 15px;
+  color: #fff;
+}
+
+.navbar {
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  padding: 10px 30px;
+  z-index: 1000;
+}
+
+.nav-item .active {
+  border-bottom: 3px solid #ee4d2d;
+}
+
+.nav-item a:hover {
+  color: #ee4d2d !important;
+}
+
+.list-item a:hover {
+  color: #ee4d2d;
+}
+
+.navbar-logo {
+  height: 30px;
+}
+
+.navbar-logo img {
+  height: 100%;
+}
+
+.main-banner {
+  margin-top: 63px;
+  height: 92vh;
+  padding: 40px 80px;
+  background-image: url(../images/main-banner.jpg);
+  background-repeat: no-repeat;
+}
+.main-banner .now-search {
+  display: inline-block;
+  width: 470px;
+}
+.main-banner .now-search .searchtext {
+  height: 45px;
+}
+
+.now-coporation {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+  background-color: #fff;
+}
+.now-coporation .preservation {
+  padding: 50px 150px;
+}
+.now-coporation .preservation li:before {
+  content: "-";
+  margin-right: 0.5em;
+}
+.now-coporation .merchant-app {
+  padding: 50px 0px 50px 150px;
+}
+.now-coporation .img-reg-merchant {
+  height: 300px;
+}
+
+footer {
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 372px;
+}
+
+.logo-shoppe {
+  cursor: pointer;
+}
+
+.facebook,
+.instagram {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #959595;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.facebook:hover {
+  background-color: #0288d1;
+}
+
+.instagram:hover {
+  background-color: #ba30a7;
+}
+
+.link-icon {
+  display: flex;
+  justify-content: space-around;
+}
+
+.link-icon .icon {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.img-bocongthuong {
+  width: 170px;
+  cursor: pointer;
+}
+
+.img-bocongthuong img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=app.css.map */
