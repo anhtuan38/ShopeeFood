@@ -1,0 +1,22 @@
+.navbar {
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  padding: 10px 30px;
+  z-index: 1000;
+}
+.nav-item .active {
+  border-bottom: 3px solid $red;
+}
+.nav-item a:hover {
+  color: $red !important;
+}
+.list-item a:hover {
+  color: $red;
+}
+.navbar-logo {
+  height: 30px;
+}
+.navbar-logo img {
+  height: 100%;
+}
