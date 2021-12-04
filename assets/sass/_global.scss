@@ -20,16 +20,29 @@ p {
   margin-bottom: 3px;
 }
 h1 {
+  margin: 0px;
   color: #fff;
+  font-size: 24px;
+}
+h2 {
   font-size: 24px;
 }
 h3 {
   font-size: 15px;
   color: #fff;
+  margin: 0px;
 }
 h4 {
   font-size: 15px;
   font-weight: inherit;
+}
+h5 {
+  font-size: 14px;
+  font-weight: bold;
+}
+h6 {
+  font-size: 12px;
+  opacity: 0.5;
 }
 .text-orage {
   color: $orage;
