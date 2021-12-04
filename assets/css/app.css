@@ -70,9 +70,26 @@ h1 {
   font-size: 24px;
 }
 
-h2 {
+h3 {
   font-size: 15px;
   color: #fff;
+}
+
+h4 {
+  font-size: 15px;
+  font-weight: inherit;
+}
+
+.text-orage {
+  color: #ee4d2d;
+}
+
+.text-blue {
+  color: #0288d1;
+}
+
+.text-lightblue {
+  color: #4d77a2;
 }
 
 .navbar {
@@ -84,6 +101,8 @@ h2 {
 }
 
 .nav-item .active {
+  font-weight: bold;
+  color: #ee4d2d !important;
   border-bottom: 3px solid #ee4d2d;
 }
 
@@ -108,10 +127,10 @@ h2 {
   padding: 8px;
   border-radius: 3px;
   margin: 0px 15px;
-  border: 1px solid #f17c65;
+  border: 1px solid #ee4d2d;
 }
 .login .login-btn {
-  color: #f17c65;
+  color: #ee4d2d;
 }
 
 .main-banner {
@@ -130,24 +149,27 @@ h2 {
 }
 
 .now-coporation {
-  width: 1200px;
   display: flex;
-  justify-content: center;
+  width: 1200px;
   margin: 50px auto;
   background-color: #fff;
 }
 .now-coporation .preservation {
-  padding: 50px 150px;
-}
-.now-coporation .preservation li:before {
-  content: "-";
-  margin-right: 0.5em;
+  height: 100%;
+  padding: 50px 0px 50px 150px;
 }
 .now-coporation .merchant-app {
-  padding: 50px 0px 50px 150px;
+  height: 280px;
+  width: 75%;
 }
 .now-coporation .img-reg-merchant {
   height: 300px;
+}
+.now-coporation .img-reg-merchant img {
+  height: 100%;
+}
+.now-coporation .img-deliverynow {
+  width: 170px;
 }
 
 footer {

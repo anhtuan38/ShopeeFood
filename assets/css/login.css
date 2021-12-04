@@ -70,9 +70,26 @@ h1 {
   font-size: 24px;
 }
 
-h2 {
+h3 {
   font-size: 15px;
   color: #fff;
+}
+
+h4 {
+  font-size: 15px;
+  font-weight: inherit;
+}
+
+.text-orage {
+  color: #ee4d2d;
+}
+
+.text-blue {
+  color: #0288d1;
+}
+
+.text-lightblue {
+  color: #4d77a2;
 }
 
 .navbar {
@@ -84,6 +101,8 @@ h2 {
 }
 
 .nav-item .active {
+  font-weight: bold;
+  color: #ee4d2d !important;
   border-bottom: 3px solid #ee4d2d;
 }
 
@@ -108,10 +127,10 @@ h2 {
   padding: 8px;
   border-radius: 3px;
   margin: 0px 15px;
-  border: 1px solid #f17c65;
+  border: 1px solid #ee4d2d;
 }
 .login .login-btn {
-  color: #f17c65;
+  color: #ee4d2d;
 }
 
 .loginShoppe {
@@ -121,7 +140,6 @@ h2 {
   padding: 30px;
 }
 .loginShoppe .btnsignup {
-  position: relative;
   border-radius: 5px;
   line-height: 2;
   cursor: pointer;
@@ -129,6 +147,16 @@ h2 {
   width: 100%;
   height: 35px;
   margin: 10px auto;
+}
+.loginShoppe .btnsignup .icon-contact {
+  font-size: 25px;
+  position: relative;
+  float: left;
+  top: 5px;
+  left: 10px;
+}
+.loginShoppe .btnsignup:hover {
+  opacity: 0.8;
 }
 .loginShoppe .phoneNumber {
   background-color: #329900;
@@ -139,15 +167,13 @@ h2 {
 .loginShoppe .loginGoogle {
   background-color: #ff5252;
 }
-.loginShoppe .inputGroup {
-  border-radius: 5px;
-}
-.loginShoppe .inputGroup input {
+.loginShoppe .usernamPassword input {
   height: 50px;
   width: 100%;
   padding-left: 40px;
 }
-.loginShoppe .inputGroup .icon {
+.loginShoppe .icon {
+  opacity: 0.8;
   position: relative;
   top: 38px;
   left: -250px;
