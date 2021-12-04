@@ -6,13 +6,15 @@
   z-index: 1000;
 }
 .nav-item .active {
-  border-bottom: 3px solid $red;
+  font-weight: bold;
+  color: $orage !important;
+  border-bottom: 3px solid $orage;
 }
 .nav-item a:hover {
-  color: $red !important;
+  color: $orage !important;
 }
 .list-item a:hover {
-  color: $red;
+  color: $orage;
 }
 .navbar-logo {
   height: 30px;
@@ -25,9 +27,9 @@
   padding: 8px;
   border-radius: 3px;
   margin: 0px 15px;
-  border: 1px solid #f17c65;
+  border: 1px solid $orage;
 
   .login-btn {
-    color: #f17c65;
+    color: $orage;
   }
 }
