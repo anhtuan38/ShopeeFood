@@ -66,18 +66,34 @@ p {
 }
 
 h1 {
+  margin: 0px;
   color: #fff;
+  font-size: 24px;
+}
+
+h2 {
   font-size: 24px;
 }
 
 h3 {
   font-size: 15px;
   color: #fff;
+  margin: 0px;
 }
 
 h4 {
   font-size: 15px;
   font-weight: inherit;
+}
+
+h5 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 12px;
+  opacity: 0.5;
 }
 
 .text-orage {
@@ -134,18 +150,65 @@ h4 {
 }
 
 .main-banner {
+  display: flex;
   margin-top: 63px;
   height: 92vh;
-  padding: 40px 80px;
+  padding: 20px 75px;
   background-image: url(../images/main-banner.jpg);
-  background-repeat: no-repeat;
+  background-size: cover;
 }
 .main-banner .now-search {
-  display: inline-block;
-  width: 470px;
+  max-width: 40%;
 }
-.main-banner .now-search .searchtext {
-  height: 45px;
+.main-banner .now-search .list-search {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-banner .now-search .list-search .category-item {
+  margin: 10px 10px 10px 0px;
+  border: 1px solid #fff;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.main-banner .now-search .list-search :hover {
+  background-color: #fff;
+  color: #000;
+}
+.main-banner .list-restaurant {
+  border-radius: 10px;
+  padding: 30px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 30px;
+  background-color: #fff;
+  max-width: 100%;
+}
+.main-banner .list-restaurant .item-restaurant {
+  cursor: pointer;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 10px;
+  width: 185px;
+}
+.main-banner .list-restaurant .item-restaurant img {
+  width: 100%;
+}
+.main-banner .list-restaurant .item-restaurant .name-and-adress {
+  padding: 10px;
+}
+.main-banner .list-restaurant .item-restaurant .discount {
+  padding: 5px 10px;
+  border-top: 1px solid #ccc;
+}
+.main-banner .list-restaurant .item-restaurant .discount .icon-discount {
+  color: #cf2127;
+  margin-right: 5px;
+}
+.main-banner .list-restaurant .item-restaurant:hover {
+  box-shadow: 0 2px 10px;
 }
 
 .now-coporation {
@@ -169,6 +232,8 @@ h4 {
   height: 100%;
 }
 .now-coporation .img-deliverynow {
+  margin-top: 20px;
+  margin-left: 20px;
   width: 170px;
 }
 
