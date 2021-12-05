@@ -194,12 +194,24 @@ h6 {
   max-width: 100%;
 }
 .main-banner .list-restaurant .item-restaurant {
+  position: relative;
   cursor: pointer;
   overflow: hidden;
   border: 1px solid #ccc;
   border-radius: 10px;
   margin: 10px;
   width: 30%;
+}
+.main-banner .list-restaurant .item-restaurant .stocking {
+  position: absolute;
+  color: #239839;
+}
+.main-banner .list-restaurant .item-restaurant .favorite {
+  padding: 3px 5px;
+  background-color: #f13233;
+  position: absolute;
+  bottom: 50%;
+  left: 10px;
 }
 .main-banner .list-restaurant .item-restaurant img {
   width: 100%;
