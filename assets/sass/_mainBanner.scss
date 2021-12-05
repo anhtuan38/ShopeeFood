@@ -21,9 +21,11 @@
         border-radius: 8px;
         cursor: pointer;
       }
-      :hover {
+      .category-item:hover {
         background-color: #fff;
-        color: #000;
+        h3 {
+          color: #000;
+        }
       }
     }
     .app {
