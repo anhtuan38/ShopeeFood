@@ -46,12 +46,25 @@
     max-width: 100%;
 
     .item-restaurant {
+      position: relative;
       cursor: pointer;
       overflow: hidden;
       border: 1px solid #ccc;
       border-radius: 10px;
       margin: 10px;
       width: 30%;
+
+      .stocking {
+        position: absolute;
+        color: #239839;
+      }
+      .favorite {
+        padding: 3px 5px;
+        background-color: #f13233;
+        position: absolute;
+        bottom: 50%;
+        left: 10px;
+      }
       img {
         width: 100%;
       }
