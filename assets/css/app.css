@@ -47,6 +47,16 @@ html {
   padding: 0px;
   background-color: #f2f2f2;
 }
+.container-fluid .back-top {
+  position: fixed;
+  cursor: pointer;
+  padding: 5px 15px;
+  border-radius: 50%;
+  background-color: #959595;
+  font-size: 30px;
+  bottom: 20px;
+  right: 20px;
+}
 
 ul {
   padding-left: 0px;
