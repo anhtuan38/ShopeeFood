@@ -5,6 +5,17 @@ html {
   position: absolute;
   padding: 0px;
   background-color: $background;
+
+  .back-top {
+    position: fixed;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 50%;
+    background-color: #959595;
+    font-size: 30px;
+    bottom: 20px;
+    right: 20px;
+  }
 }
 ul {
   padding-left: 0px;
