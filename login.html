@@ -18,8 +18,12 @@
             <div class="navbar-logo" href="#">
                 <a href="index.html"><img src="./assets/images/shopeefoodvn.png" alt="logo"></a>
             </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <div class="collapse navbar-collapse mx-5">
+            <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto .bg-light">
                     <li class="dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -59,20 +63,22 @@
                     </ul>
                 </div>
             </div>
-            <i class="fas fa-search"></i>
-            <div class="login">
-                <a href="login.html" class="login-btn">Đăng Nhập</a>
-            </div>
-            <div class="dropdown">
-                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    Tiếng Anh
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#"><img src="./assets/images/icon-america.png" alt="english"> Tiếng
-                        Anh</a>
-                    <a class="dropdown-item" href="#"><img src="./assets/images/icon-vietnam.png" alt="vietnam"> Tiếng
-                        Việt</a>
+            <div class="collapse navbar-collapse">
+                <i class="fas fa-search"></i>
+                <div class="login">
+                    <a href="login.html" class="login-btn">Đăng Nhập</a>
+                </div>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Tiếng Anh
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#"><img src="./assets/images/icon-america.png" alt="english"> Tiếng
+                            Anh</a>
+                        <a class="dropdown-item" href="#"><img src="./assets/images/icon-vietnam.png" alt="vietnam"> Tiếng
+                            Việt</a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -85,7 +91,7 @@
             <div class="loginGoogle btnsignup"><i class="fab fa-google-plus icon-contact"></i>GOOGLE</div>
             <p class="pt-4">Hoặc đăng nhập bằng tài khoản của bạn</p>
             <form action="#">
-                <div class="usernamPassword">
+                <div class="usernamePassword">
                     <i class="far fa-envelope icon"></i>
                     <input type="text" placeholder="Usernam or email" required>
                     <i class="fas fa-lock icon"></i>
