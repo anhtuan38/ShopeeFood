@@ -1,6 +1,6 @@
 .loginShoppe {
   margin: 94px auto 40px;
-  width: 600px;
+  max-width: 600px;
   background-color: #fff;
   padding: 30px;
 
@@ -36,7 +36,7 @@
     background-color: #ff5252;
   }
 
-  .usernamPassword {
+  .usernamePassword {
     input {
       height: 50px;
       width: 100%;
