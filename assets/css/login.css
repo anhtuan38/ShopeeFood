@@ -47,6 +47,16 @@ html {
   padding: 0px;
   background-color: #f2f2f2;
 }
+.container-fluid .back-top {
+  position: fixed;
+  cursor: pointer;
+  padding: 5px 15px;
+  border-radius: 50%;
+  background-color: #959595;
+  font-size: 30px;
+  bottom: 20px;
+  right: 20px;
+}
 
 ul {
   padding-left: 0px;
@@ -66,18 +76,34 @@ p {
 }
 
 h1 {
+  margin: 0px;
   color: #fff;
+  font-size: 24px;
+}
+
+h2 {
   font-size: 24px;
 }
 
 h3 {
   font-size: 15px;
   color: #fff;
+  margin: 0px;
 }
 
 h4 {
   font-size: 15px;
   font-weight: inherit;
+}
+
+h5 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 12px;
+  opacity: 0.5;
 }
 
 .text-orage {
@@ -135,7 +161,7 @@ h4 {
 
 .loginShoppe {
   margin: 94px auto 40px;
-  width: 600px;
+  max-width: 600px;
   background-color: #fff;
   padding: 30px;
 }
@@ -167,7 +193,7 @@ h4 {
 .loginShoppe .loginGoogle {
   background-color: #ff5252;
 }
-.loginShoppe .usernamPassword input {
+.loginShoppe .usernamePassword input {
   height: 50px;
   width: 100%;
   padding-left: 40px;
