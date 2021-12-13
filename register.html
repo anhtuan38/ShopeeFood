@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log In</title>
+    <title>Register</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/register.css">
 </head>
 
 <body>
@@ -86,7 +86,6 @@
             </div>
         </nav>
         <div id="toast"></div>
-
         <!-- Form Login -->
         <div class="loginShoppe text-center">
             <h5>Sign up</h5>
@@ -97,9 +96,13 @@
             <form action="#">
                 <div class="usernamePassword">
                     <i class="far fa-envelope icon"></i>
-                    <input type="text" placeholder="Username or email" required id="userName">
+                    <input type="text" placeholder="Username" required id="userNameRegister">
+                    <div id="msgUserName"></div>
                     <i class="fas fa-lock icon"></i>
-                    <input type="password" placeholder="Password" required id="passWord">
+                    <input type="password" placeholder="Password" required id="passWordRegister" minlength="5">
+                    <i class="fas fa-lock icon"></i>
+                    <input type="password" placeholder="Verify Password" required id="verifyPassword" onblur="validatePass()">
+                    <div id="msgVerifyPassword"></div>
                 </div>
                 <div class="agreeCheckbox d-flex justify-content-between">
                     <div>
@@ -110,14 +113,14 @@
                         <a href="#">Quên mật khẩu?</a>
                     </div>
                 </div>
-                <button type="button" class="btn btn-primary w-100 my-3" id="submitBtn" onclick="validateLogin()">Đăng Nhập</button>
+                <button type="button" class="btn btn-primary w-100 my-3" id="submitBtn" onclick="validateRegister()">Đăng Ký</button>
             </form>
             <p class="rules">Chúng tôi không sử dụng thông tin của bạn với bất kỳ mục đích nào. Bằng cách đăng nhập hoặc
                 đăng ký, bạn đồng ý với <a href=""> Chính sách quy định của Foody</a></p>
         </div>
 
         <!-- Footer Shoppe -->
-        <footer  class= "d-none d-lg-block">
+        <footer class= "d-none d-lg-block">
             <div class="container d-flex justify-content-around">
                 <aside>
                     <h5>Công ty</h5>
@@ -188,8 +191,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
     <script src="./assets/sourceCode/toast.js"></script>
-    <script src="./assets/sourceCode/login.js"></script>
+    <script src="./assets/sourceCode/register.js"></script>
 </body>
 
 </html>
