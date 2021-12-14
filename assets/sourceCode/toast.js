@@ -1,10 +1,9 @@
-
 function showSuccessToast(mes) {
   toast({
     title: "Thành công!",
     message: mes,
     type: "success",
-    duration: 5000
+    duration: 2000
   });
 }
 
@@ -13,12 +12,11 @@ function showErrorToast(mes) {
     title: "Thất bại!",
     message: mes,
     type: "error",
-    duration: 5000
+    duration: 2000
   });
 }
-
 // Toast function
-function toast({ title = "", message = "", type = "info", duration = 3000 }) {
+function toast({ title = "", message = "", type = "info", duration = "" }) {
   const main = document.getElementById("toast");
   if (main) {
     const toast = document.createElement("div");
@@ -38,15 +36,12 @@ function toast({ title = "", message = "", type = "info", duration = 3000 }) {
 
     const icons = {
       success: "fas fa-check-circle",
-      info: "fas fa-info-circle",
-      warning: "fas fa-exclamation-circle",
       error: "fas fa-exclamation-circle"
     };
     const icon = icons[type];
-    const delay = (duration / 1000).toFixed(2);
 
     toast.classList.add("toast", `toast--${type}`);
-    toast.style.animation = `slideInLeft ease .3s, fadeOut linear 1s ${delay}s forwards`;
+    toast.style.animation = `slideInLeft ease 2s, linear 1s forwards`;
 
     toast.innerHTML = `
                     <div class="toast__icon">

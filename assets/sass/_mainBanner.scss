@@ -1,88 +1,106 @@
 .main-banner {
-  display: flex;
+
   margin-top: 63px;
-  height: 92vh;
+
   padding: 20px 75px;
   background-image: url(../images/main-banner.jpg);
   background-size: cover;
 
-  .now-search {
-    max-width: 40%;
+  &__content {
 
-    .list-search {
-      width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 92vh;
+
+    .now-search {
+      max-width: 40%;
+
+      .list-search {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        .category-item {
+          margin: 10px 10px 10px 0px;
+          border: 1px solid #fff;
+          padding: 10px;
+          border-radius: 8px;
+          cursor: pointer;
+        }
+
+        .category-item:hover {
+          background-color: #fff;
+
+          h3 {
+            color: #000;
+          }
+        }
+      }
+      .app {
+        height: 50px;
+
+        img {
+          height: 100%;
+        }
+      }
+    }
+
+    .list-restaurant {
+      border-radius: 10px;
+      padding: 30px 40px;
       display: flex;
       flex-wrap: wrap;
+      margin-left: 30px;
+      background-color: #fff;
 
-      .category-item {
-        margin: 10px 10px 10px 0px;
-        border: 1px solid #fff;
-        padding: 10px;
-        border-radius: 8px;
-        cursor: pointer;
-      }
-      .category-item:hover {
-        background-color: #fff;
-        h3 {
-          color: #000;
+      #root {
+
+        .item-restaurant {
+          position: relative;
+          cursor: pointer;
+          overflow: hidden;
+          border: 1px solid #ccc;
+          border-radius: 10px;
+          margin: 10px;
+          width: 30%;
+
+          .stocking {
+            position: absolute;
+            color: #239839;
+          }
+
+          .favorite {
+            padding: 3px 5px;
+            background-color: #f13233;
+            position: absolute;
+            bottom: 50%;
+            left: 10px;
+          }
+
+          img {
+            width: 600px;
+          }
+
+          .name-and-address {
+            padding: 10px;
+          }
+
+          .discount {
+            padding: 5px 10px;
+            border-top: 1px solid #ccc;
+
+            .icon-discount {
+              color: #cf2127;
+              margin-right: 5px;
+            }
+          }
+        }
+
+        .item-restaurant:hover {
+          box-shadow: 0 2px 10px;
         }
       }
-    }
-    .app {
-      height: 50px;
-      img {
-        height: 100%;
-      }
-    }
-  }
-
-  .list-restaurant {
-    border-radius: 10px;
-    padding: 30px 40px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 30px;
-    background-color: #fff;
-    max-width: 100%;
-
-    .item-restaurant {
-      position: relative;
-      cursor: pointer;
-      overflow: hidden;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      margin: 10px;
-      width: 30%;
-
-      .stocking {
-        position: absolute;
-        color: #239839;
-      }
-      .favorite {
-        padding: 3px 5px;
-        background-color: #f13233;
-        position: absolute;
-        bottom: 50%;
-        left: 10px;
-      }
-      img {
-        width: 100%;
-      }
-      .name-and-adress {
-        padding: 10px;
-      }
-      .discount {
-        padding: 5px 10px;
-        border-top: 1px solid #ccc;
-
-        .icon-discount {
-          color: #cf2127;
-          margin-right: 5px;
-        }
-      }
-    }
-    .item-restaurant:hover {
-      box-shadow: 0 2px 10px;
     }
   }
 }

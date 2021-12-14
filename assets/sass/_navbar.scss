@@ -4,32 +4,49 @@
   position: fixed;
   padding: 10px 30px;
   z-index: 1000;
+  top: 0;
 }
+
 .nav-item .active {
   font-weight: bold;
-  color: $orage !important;
-  border-bottom: 3px solid $orage;
+  color: $orange !important;
+  border-bottom: 3px solid $orange;
 }
+
 .nav-item a:hover {
-  color: $orage !important;
+  color: $orange !important;
 }
+
 .list-item a:hover {
-  color: $orage;
+  color: $orange;
 }
+
 .navbar-logo {
   height: 30px;
 }
+
 .navbar-logo img {
   height: 100%;
 }
+
 .login {
   height: 100%;
   padding: 8px;
   border-radius: 3px;
   margin: 0px 15px;
-  border: 1px solid $orage;
+  border: 1px solid $orange;
 
   .login-btn {
-    color: $orage;
+    color: $orange;
+  }
+}
+.language {
+  display: flex;
+  align-items: center;
+  width: 20px;
+  margin-right: 5px;
+
+  img {
+    width: 100%;
   }
 }
