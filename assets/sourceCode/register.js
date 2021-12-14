@@ -19,21 +19,30 @@ const validatePass = () => {
 }
 
 const validateRegister = () => {
+
   // get Data from localStorage
-  const Data = JSON.parse(localStorage.getItem("myData"))
+  let Data = JSON.parse(localStorage.getItem("myData"))
+  if (!Data) Data = [];
+
   const userName = $("userNameRegister").value;
   const regularUsername = /^[a-zA-Z0-9_.]{3,15}$/
-  const regularEmail = /^[a-zA-Z0-9_.]$/
+  const regularEmail = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  let check = false; // variable used to check if the account already exists
 
-  // check if the registered account already exists or not
-  let check = Data.some((obj) => (obj.name === userName))
-
-  if (!regularUsername.test(userName)) {
-    showErrorToast("Tên đăng nhập không hợp lệ")
+  if (!regularUsername.test(userName) && !regularEmail.test(userName)) {
+    showErrorToast("Tên đăng nhập hoặc Email không hợp lệ")
     return false;
   }
 
-  if (validatePass() && check) {
+  // check if the registered account already exists or not
+  if (Data) { check = Data.some((obj) => (obj.name === userName)) }
+
+
+  // If the account is already registered, show an error
+  if (check) showErrorToast("Tài khoản đã được đăng ký")
+
+  //If the password matches and the account doesn't exist, then you can register for an account
+  if (validatePass() && !check) {
     showSuccessToast("Đăng ký thành công")
     let user = {
       name: userName,
@@ -42,5 +51,5 @@ const validateRegister = () => {
     Data.push(user);
     updateBase(Data)
     setTimeout(function () { window.open("./login.html", "_self") }, 2000)
-  } else showErrorToast("Tài khoản đã được đăng ký");
+  }
 }
