@@ -13,7 +13,7 @@ const validateLogin = () => {
   if (check) {
     showSuccessToast("Đăng nhập thành công");
     // $("loginSuccess").innerHTML = `Xin chào ${userName}`
-    setTimeout(function () { window.open("../loginSuccess.html", "_self", "location=yes") }, 2000)
+    setTimeout(function () { window.open("./loginSuccess.html", "_self", "location=yes") }, 2000)
 
   } else showErrorToast("Tài khoản hoặc mật khẩu không chính xác");
 
