@@ -7,37 +7,37 @@ var products = [
   },
   {
     id: '2',
-    urlImg: '../assets/images/items/mi-quang.jpg',
+    urlImg: './assets/images/items/mi-quang.jpg',
     name: 'Mỳ Quảng My Ny',
     price: 30000,
   },
   {
     id: '3',
-    urlImg: '../assets/images/items/phuc-long.jpg',
+    urlImg: './assets/images/items/phuc-long.jpg',
     name: 'Phúc Long',
     price: 30000,
   },
   {
     id: '4',
-    urlImg: '../assets/images/items/tra-sua.jpeg',
+    urlImg: './assets/images/items/tra-sua.jpeg',
     name: 'Trà Sữa Bobapop',
     price: 30000,
   },
   {
     id: '5',
-    urlImg: '../assets/images/items/com-xoi.jpg',
+    urlImg: './assets/images/items/com-xoi.jpg',
     name: 'Cơm Gà Xối Mỡ',
     price: 30000,
   },
   {
     id: '6',
-    urlImg: '../assets/images/items/com-tho.jpg',
+    urlImg: './assets/images/items/com-tho.jpg',
     name: 'Cơm Thố Tuấn Lộc',
     price: 30000,
   }
 ];
 
-let htmls = products.map((product) => {
+let items = products.map((product) => {
   return `<div class="item-restaurant" id ="${product.id}">
             <i class="fas fa-circle stocking"></i>
             <img src="${product.urlImg}" alt="item">
@@ -50,5 +50,4 @@ let htmls = products.map((product) => {
           </div>`
 });
 
-console.log(htmls);
-document.getElementById('root').innerHTML = htmls;
+document.getElementById("root").innerHTML = items.join(" ");
