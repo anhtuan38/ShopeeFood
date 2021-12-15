@@ -34,6 +34,42 @@ var products = [
     urlImg: './assets/images/items/com-tho.jpg',
     name: 'Cơm Thố Tuấn Lộc',
     price: 55000,
+  },
+  {
+    id: 7,
+    urlImg: './assets/images/items/item1.jpg',
+    name: 'Bún bò',
+    price: 60000,
+  },
+  {
+    id: 8,
+    urlImg: './assets/images/items/item2.jpg',
+    name: 'Trà Sữa',
+    price: 65000,
+  },
+  {
+    id: 9,
+    urlImg: './assets/images/items/pizza.jpg',
+    name: 'Pizza',
+    price: 33000,
+  },
+  {
+    id: 10,
+    urlImg: './assets/images/items/mi-quang2.jpg',
+    name: 'Mì Quảng',
+    price: 45000,
+  },
+  {
+    id: 11,
+    urlImg: './assets/images/items/tocotoco.jpg',
+    name: 'Trà Sữa Tocotoco',
+    price: 46000,
+  },
+  {
+    id: 12,
+    urlImg: './assets/images/items/nuoc-xoai-ep.jpg',
+    name: 'Nước Xoài Ép',
+    price: 44000,
   }
 ];
 
