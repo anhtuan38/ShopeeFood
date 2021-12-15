@@ -51,7 +51,7 @@ let items = products.map((product) => {
             </div>
             <div class="discount text-blue fw-bold d-flex justify-content-between">
               <div>
-                <i class="fas fa-tag icon-discount"></i>Giảm món
+                <i class="fas fa-tag icon-discount"></i>Giảm 10%
               </div>
               <div>
                 <i class="fas fa-cart-plus mx-2"></i>
