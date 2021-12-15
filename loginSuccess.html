@@ -296,6 +296,14 @@
         </footer>
     </div>
 
+    <script>
+        // IIFE function
+        (function () {
+            const login = JSON.parse(localStorage.getItem("Success"));
+            document.getElementById("loginSuccess").innerHTML = `Xin chào ${login[0].key}`;
+        })()
+
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
         </script>
