@@ -209,7 +209,7 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  height: 92vh;
 }
 
 .main-banner__content .now-search {
@@ -259,7 +259,7 @@ h6 {
       flex-wrap: wrap;
   margin-left: 30px;
   background-color: #fff;
-  height: 100vh;
+  height: 85vh;
   overflow: auto;
   overflow: -moz-scrollbars-none;
   -ms-overflow-style: none;
