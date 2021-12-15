@@ -84,7 +84,7 @@ a {
 
 p {
   font-size: 14px;
-  margin-bottom: 3px;
+  margin-bottom: 0px !important;
 }
 
 h1 {
@@ -357,14 +357,23 @@ h6 {
   cursor: pointer;
 }
 
-.loginShoppe {
-  margin: 94px auto 40px;
+.box-container {
+  margin-top: 62px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box-container .loginShoppe {
   max-width: 600px;
   background-color: #fff;
   padding: 30px;
 }
 
-.loginShoppe .btnsignup {
+.box-container .loginShoppe .btnsignup {
   border-radius: 5px;
   line-height: 2;
   cursor: pointer;
@@ -374,7 +383,7 @@ h6 {
   margin: 10px auto;
 }
 
-.loginShoppe .btnsignup .icon-contact {
+.box-container .loginShoppe .btnsignup .icon-contact {
   font-size: 25px;
   position: relative;
   float: left;
@@ -382,40 +391,40 @@ h6 {
   left: 10px;
 }
 
-.loginShoppe .btnsignup:hover {
+.box-container .loginShoppe .btnsignup:hover {
   opacity: 0.8;
 }
 
-.loginShoppe .phoneNumber {
+.box-container .loginShoppe .phoneNumber {
   background-color: #329900;
 }
 
-.loginShoppe .loginFacebook {
+.box-container .loginShoppe .loginFacebook {
   background-color: #187caa;
 }
 
-.loginShoppe .loginGoogle {
+.box-container .loginShoppe .loginGoogle {
   background-color: #ff5252;
 }
 
-.loginShoppe .usernamePassword input {
+.box-container .loginShoppe .usernamePassword input {
   height: 50px;
   width: 100%;
   padding-left: 40px;
 }
 
-.loginShoppe .icon {
+.box-container .loginShoppe .icon {
   opacity: 0.8;
   position: relative;
   top: 38px;
   left: -250px;
 }
 
-.loginShoppe a {
+.box-container .loginShoppe a {
   text-decoration: underline;
 }
 
-.loginShoppe .rules {
+.box-container .loginShoppe .rules {
   margin: 30px 0px;
 }
 

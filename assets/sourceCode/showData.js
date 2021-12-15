@@ -37,6 +37,7 @@ var products = [
   }
 ];
 
+
 let items = products.map((product) => {
   return `<div class="item-restaurant" id ="${product.id}">
             <i class="fas fa-circle stocking"></i>
@@ -46,7 +47,14 @@ let items = products.map((product) => {
                 <h6 title="38 Huy Cận, P. Hoà Cường Nam, Quận Hải Châu, Đà Nẵng">${product.price} VND
                 </h6>
             </div>
-            <div class="discount text-blue fw-bold"> <i class="fas fa-tag icon-discount"></i>Giảm món <i class="fas fa-cart-plus mx-2"></i></div>
+            <div class="discount text-blue fw-bold d-flex justify-content-between">
+              <div>
+                <i class="fas fa-tag icon-discount"></i>Giảm món
+              </div>
+              <div>
+                <i class="fas fa-cart-plus mx-2"></i>
+              </div>
+            </div>
           </div>`
 });
 

@@ -1,59 +1,66 @@
-.loginShoppe {
-  margin: 94px auto 40px;
-  max-width: 600px;
-  background-color: #fff;
-  padding: 30px;
+.box-container {
+  margin-top: 62px;
+  display: flex;
+  justify-content: center;
+  // background-color: $background;
 
-  .btnsignup {
-    border-radius: 5px;
-    line-height: 2;
-    cursor: pointer;
-    color: #fff;
-    width: 100%;
-    height: 35px;
-    margin: 10px auto;
+  .loginShoppe {
+    max-width: 600px;
+    background-color: #fff;
+    padding: 30px;
 
-    .icon-contact {
-      font-size: 25px;
-      position: relative;
-      float: left;
-      top: 5px;
-      left: 10px;
-    }
-  }
-  .btnsignup:hover {
-    opacity: 0.8;
-  }
-  .phoneNumber {
-    background-color: #329900;
-  }
-
-  .loginFacebook {
-    background-color: #187caa;
-  }
-
-  .loginGoogle {
-    background-color: #ff5252;
-  }
-
-  .usernamePassword {
-    input {
-      height: 50px;
+    .btnsignup {
+      border-radius: 5px;
+      line-height: 2;
+      cursor: pointer;
+      color: #fff;
       width: 100%;
-      padding-left: 40px;
+      height: 35px;
+      margin: 10px auto;
+
+      .icon-contact {
+        font-size: 25px;
+        position: relative;
+        float: left;
+        top: 5px;
+        left: 10px;
+      }
+    }
+    .btnsignup:hover {
+      opacity: 0.8;
+    }
+    .phoneNumber {
+      background-color: #329900;
+    }
+
+    .loginFacebook {
+      background-color: #187caa;
+    }
+
+    .loginGoogle {
+      background-color: #ff5252;
+    }
+
+    .usernamePassword {
+      input {
+        height: 50px;
+        width: 100%;
+        padding-left: 40px;
+      }
+    }
+
+    .icon {
+      opacity: 0.8;
+      position: relative;
+      top: 38px;
+      left: -250px;
+    }
+    a {
+      text-decoration: underline;
+    }
+    .rules {
+      margin: 30px 0px;
     }
   }
 
-  .icon {
-    opacity: 0.8;
-    position: relative;
-    top: 38px;
-    left: -250px;
-  }
-  a {
-    text-decoration: underline;
-  }
-  .rules {
-    margin: 30px 0px;
-  }
 }
