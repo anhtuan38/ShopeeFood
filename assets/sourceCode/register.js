@@ -25,6 +25,12 @@ const validatePass = () => {
   return true;
 }
 
+// Press Enter key
+let pressEnter = document.getElementById("verifyPassword")
+pressEnter.onkeydown = (event) => {
+  if (event.keyCode === 13) validateRegister();
+}
+
 const validateRegister = () => {
 
   // get Data from localStorage

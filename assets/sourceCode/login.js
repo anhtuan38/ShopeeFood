@@ -2,6 +2,12 @@ const $ = (value) => {
   return document.getElementById(value);
 };
 
+
+let pressEnter = document.getElementById("passWord")
+pressEnter.onkeydown = (event) => {
+  if (event.keyCode === 13) validateLogin();
+}
+
 const validateLogin = () => {
   const userName = $("userName").value;
   const passWord = $("passWord").value;
@@ -19,6 +25,5 @@ const validateLogin = () => {
     setTimeout(function () { window.open("./loginSuccess.html", "_self", "location=yes") }, 2000)
 
   } else showErrorToast("Tài khoản hoặc mật khẩu không chính xác");
-
 }
 
