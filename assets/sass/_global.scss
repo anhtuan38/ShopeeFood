@@ -73,7 +73,7 @@ h5 {
 
 h6 {
   font-size: 12px;
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 .text-orage {
@@ -85,5 +85,9 @@ h6 {
 }
 
 .text-lightblue {
+  font-style: bold !important;
   color: $lightblue;
+}
+.text-line-through {
+  text-decoration:line-through !important;
 }
