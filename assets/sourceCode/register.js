@@ -9,8 +9,15 @@ const updateBase = (data) => {
 
 // validate Passwords
 const validatePass = () => {
+  const regularPassword = /^[a-zA-Z0-9]{3,15}$/
   const passWord = $("passWordRegister").value;
   const verifyPassWord = $("verifyPassword").value;
+
+  if (!regularPassword.test(passWord)) {
+    showErrorToast("Passwords không được dùng ký tự đặc biệt")
+    return false;
+  }
+
   if (!passWord || verifyPassWord != passWord) {
     showErrorToast("Passwords do not match")
     return false;
@@ -39,7 +46,10 @@ const validateRegister = () => {
 
 
   // If the account is already registered, show an error
-  if (check) showErrorToast("Tài khoản đã được đăng ký")
+  if (check) {
+    showErrorToast("Tài khoản đã được đăng ký")
+    return false;
+  }
 
   //If the password matches and the account doesn't exist, then you can register for an account
   if (validatePass() && !check) {
